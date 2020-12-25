@@ -1,0 +1,34 @@
+#babylon-content-container-02 {
+    overflow: auto;
+}
+
+#babylon-container-02 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-bottom: 100px;
+}
+
+
+#canvas-02 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#babylon-text-container-02 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.textbox {
+    background: rgba(25, 15, 5, 0.6);
+    color: white;
+    margin: auto 40px;
+    padding: 5px;
+    padding: 20px auto;
+    position: absolute;
+}

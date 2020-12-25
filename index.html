@@ -1,0 +1,184 @@
+<html lang="zh-Hans">
+
+<head>
+    <title>桂林米粉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Import JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Import Scroll Magic  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+    <!-- Import Babylon.js -->
+    <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <!-- Import model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- Import srollama scripts -->
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- Import CSS files -->
+    <link rel="stylesheet" href="css/babylon.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/texts.css">
+    <link rel="stylesheet" href="css/tunnel.css">
+    <link rel="stylesheet" href="css/scrollama.css">
+    <link rel="stylesheet" href="css/model-viewer.css">
+</head>
+
+<body>
+    <div id="babylon-content-container">
+        <div id="babylon-video-spacer"></div>
+        <div id="babylon-container">
+            <canvas id="canvas" touch-action="auto"></canvas>
+        </div>
+
+
+        <!-- =================BABYLON SCENE 01 STARTS BELOW================= -->
+
+
+
+        <div id="babylon-text-container">
+            <div class="spacer" id="babylon-spacer0001"></div>
+            <div id="babylon-trigger1"></div>
+            <div id="babylon-pin1">
+                <h1 id="title" class="textbox" id="babylon-overlayText01">
+                    桂林米粉 <small>––– 它香吗？</small></h1>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0102"></div>
+            <div id="babylon-trigger2"></div>
+            <div id="babylon-pin2">
+                <p class="textbox" id="babylon-overlayText02">
+                    桂林山水甲天下。<br>城市中除了连绵不断的丘壑与桂花树，<br> 每走一两步，就可以看到一家家米粉店。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0203"></div>
+            <div id="babylon-trigger3"></div>
+            <div id="babylon-pin3">
+                <p class="textbox" id="babylon-overlayText03">
+                    一碗地道的桂林米粉配有卤牛肉、锅烧、<br>秘制的卤水和各式的小菜。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0304"></div>
+            <div id="babylon-trigger4"></div>
+            <div id="babylon-pin4">
+                <p class="textbox" id="babylon-overlayText04">
+                    但是最为人津津乐道的确是这爽口弹牙的米粉。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0405"></div>
+            <div id="babylon-trigger5"></div>
+            <div id="babylon-pin5">
+                <p class="textbox" id="babylon-overlayText05">
+                    这长长的粉不仅可以填饱食客的肚子，<br>更是穿越千年历史，跨越中国南北的乡愁。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0506"></div>
+            <div id="babylon-trigger6"></div>
+            <div id="babylon-pin6">
+                <p class="textbox" id="babylon-overlayText06">
+                    透过米粉穿越时空，回到秦朝，<br>去探寻桂林米粉本真的滋味。
+                </p>
+            </div>
+
+            <!-- <div class="spacer" id="babylon-spacer0607"></div>
+            <div id="babylon-trigger7"></div>
+            <div id="babylon-pin7">
+                <p class="textbox" id="babylon-overlayText07">
+                    
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0708"></div>
+            <div id="babylon-trigger8"></div>
+            <div id="babylon-pin8">
+                <p class="textbox" id="babylon-overlayText08">
+                   
+                </p>
+            </div> -->
+
+        </div>
+
+
+    </div>
+
+    <div id="babylon-content-container-02">
+        <div id="babylon-video-spacer-02"></div>
+        <div id="babylon-container-02">
+            <canvas id="canvas-02" touch-action="auto"></canvas>
+        </div>
+
+        <div id="babylon-text-container-02">
+            <div class="spacer" id="babylon-spacer0001-02"></div>
+            <div id="babylon-trigger1-02"></div>
+            <div id="babylon-pin1-02">
+                <p class="textbox" id="babylon-overlayText01-02">
+                    公元前219年，秦始皇派兵几十万南征千里，<br>来到如今的桂林兴安县修筑灵渠，以开拓岭南。</p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0102-02"></div>
+            <div id="babylon-trigger2-02"></div>
+            <div id="babylon-pin2-02">
+                <p class="textbox" id="babylon-overlayText02-02">
+                    繁重的劳役加上吃不惯南方的米饭，<br>士兵们对家乡的思念日益增加。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0203-02"></div>
+            <div id="babylon-trigger3-02"></div>
+            <div id="babylon-pin3-02">
+                <p class="textbox" id="babylon-overlayText03-02">
+                    为了缓解士兵的乡愁，<br>桂林当地百姓将稻谷磨成粉，<br>制作成与面条形状类似的米粉犒劳士兵。<br>这便是最初桂林米粉的由来。
+                </p>
+            </div>
+
+            <div class="spacer" id="babylon-spacer0304-02"></div>
+            <div id="babylon-trigger4-02"></div>
+            <div id="babylon-pin4-02">
+                <p class="textbox" id="babylon-overlayText04-02">
+                    <font size="+4">你问这米粉它香吗？</font>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="content-conatiner">
+        <div id="ricenoodle-model-container">
+            <model-viewer id="ricenoodle-model-viewer" ar src="models/RiceNoodleBowl.glb" alt="桂林米粉3D模型" ios-src=""
+                exposure="1.3" shadow-softness="1" auto-rotate min-camera-orbit="auto 25deg 38.79m"
+                max-camera-orbit="auto 49deg auto" min-field-of-view="45deg" max-field-of-view="auto" exposure="1.7"
+                autoplay quick-look-browsers="safari chrome">
+
+                <button slot="ar-button" id="ar-button">
+                    AR试吃
+                </button>
+            </model-viewer>
+
+        </div>
+
+        <div class="scroll-texts">
+            <div class="step" data-step="a">
+                <p>
+                    <strong>客官，您不也来一碗？</strong><br>
+                    <font size="-1">手机用户，点击上方“AR试吃”按钮把桂林米粉端上桌。</font>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/babylon.js"></script>
+    <script src="js/babylonTunnel.js"></script>
+    <script src="js/ricenoodle-scrollama.js"></script>
+</body>
+
+</html>
