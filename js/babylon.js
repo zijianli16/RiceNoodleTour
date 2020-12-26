@@ -50,7 +50,7 @@ function initBabylonScene() {
         const hemisphericLight = new BABYLON.HemisphericLight('hemisphericLight', BABYLON.Vector3(0, 0, 0), scene);
     
         //adjust light intensity
-        hemisphericLight.intensity = 1;
+        hemisphericLight.intensity = 2;
         hemisphericLight.groundColor = new BABYLON.Color3.FromHexString('#ffffff');
     }
     //***************************************Set Lighting************************************** */
@@ -85,7 +85,7 @@ function initBabylonScene() {
         //     }, 1000 / 24);
         // })
     
-        new BABYLON.SceneLoader.ImportMeshAsync('','models/','RiceNoodle_Babylon02.gltf', scene).then(() => {
+        new BABYLON.SceneLoader.ImportMeshAsync('','models/','RiceNoodle_BJS.gltf', scene).then(() => {
             //scene.createDefaultCameraOrLight(true, true, true)
             //console.log("scene =" + scene);
     
@@ -140,7 +140,7 @@ function initBabylonScene() {
     
     //========================Input Your Customized Value Below =====================
     
-    let videoDuration = 21;
+    let videoDuration = 20;
     //how long is the video? i.e 14 means that video is 14 seconds long. 
     let videoFrameRate = 30;
     //what is the video frame rate? i.e: 25fps/30fps
