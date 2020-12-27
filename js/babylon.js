@@ -140,7 +140,7 @@ function initBabylonScene() {
     
     //========================Input Your Customized Value Below =====================
     
-    let videoDuration = 20;
+    let videoDuration = 20.3;
     //how long is the video? i.e 14 means that video is 14 seconds long. 
     let videoFrameRate = 30;
     //what is the video frame rate? i.e: 25fps/30fps
@@ -294,39 +294,39 @@ function initBabylonScene() {
         //.addIndicators({ name: "--- text04 Scene" });
     //------------------------OverlayText06---------------------
     
-    //------------------------OverlayText07---------------------
-    //set text06 mergining from bottom of viewport at 6 second
-    let text07TargetShowTime = 15.5;
-    //set text05 pin duration, i.e 1000px or 1 second of video duration
-    let text07Stay = 1000;
-    document.getElementById("babylon-spacer0607").style.marginTop = (text07TargetShowTime - text06TargetShowTime) * yOffsetToVidTimeRate - text06Stay + "px";
+    // //------------------------OverlayText07---------------------
+    // //set text06 mergining from bottom of viewport at 6 second
+    // let text07TargetShowTime = 15.5;
+    // //set text05 pin duration, i.e 1000px or 1 second of video duration
+    // let text07Stay = 1000;
+    // document.getElementById("babylon-spacer0607").style.marginTop = (text07TargetShowTime - text06TargetShowTime) * yOffsetToVidTimeRate - text06Stay + "px";
     
-    let text07Scene = new ScrollMagic.Scene({
-        triggerHook: 0.5,
-        triggerElement: "#babylon-trigger7",
-        duration: text07Stay,
-    })
-        .setPin("#babylon-pin7")
-        .addTo(controller)
-        //.addIndicators({ name: "--- text04 Scene" });
-    //------------------------OverlayText07---------------------
+    // let text07Scene = new ScrollMagic.Scene({
+    //     triggerHook: 0.5,
+    //     triggerElement: "#babylon-trigger7",
+    //     duration: text07Stay,
+    // })
+    //     .setPin("#babylon-pin7")
+    //     .addTo(controller)
+    //     //.addIndicators({ name: "--- text04 Scene" });
+    // //------------------------OverlayText07---------------------
     
-    //------------------------OverlayText08---------------------
-    //set text06 mergining from bottom of viewport at 6 second
-    let text08TargetShowTime = 17.5;
-    //set text05 pin duration, i.e 1000px or 1 second of video duration
-    let text08Stay = 800;
-    document.getElementById("babylon-spacer0708").style.marginTop = (text08TargetShowTime - text07TargetShowTime) * yOffsetToVidTimeRate - text07Stay + "px";
+    // //------------------------OverlayText08---------------------
+    // //set text06 mergining from bottom of viewport at 6 second
+    // let text08TargetShowTime = 17.5;
+    // //set text05 pin duration, i.e 1000px or 1 second of video duration
+    // let text08Stay = 800;
+    // document.getElementById("babylon-spacer0708").style.marginTop = (text08TargetShowTime - text07TargetShowTime) * yOffsetToVidTimeRate - text07Stay + "px";
     
-    let text08Scene = new ScrollMagic.Scene({
-        triggerHook: 0.5,
-        triggerElement: "#babylon-trigger7",
-        duration: text08Stay,
-    })
-        .setPin("#babylon-pin8")
-        .addTo(controller)
-        //.addIndicators({ name: "--- text04 Scene" });
-    //------------------------OverlayText08---------------------
+    // let text08Scene = new ScrollMagic.Scene({
+    //     triggerHook: 0.5,
+    //     triggerElement: "#babylon-trigger7",
+    //     duration: text08Stay,
+    // })
+    //     .setPin("#babylon-pin8")
+    //     .addTo(controller)
+    //     //.addIndicators({ name: "--- text04 Scene" });
+    // //------------------------OverlayText08---------------------
     
     
     

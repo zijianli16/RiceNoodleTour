@@ -23,12 +23,3 @@
     height: 100%;
     width: 100%;
 }
-
-.textbox {
-    background: rgba(25, 15, 5, 0.6);
-    color: white;
-    margin: auto 40px;
-    padding: 5px;
-    padding: 20px auto;
-    position: absolute;
-}
